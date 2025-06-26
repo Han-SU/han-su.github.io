@@ -25,6 +25,8 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
+service:
+  enabled: true
 ---
 
 <!-- 第一行：个人简介 + 联系方式（左） + 头像（右） -->
