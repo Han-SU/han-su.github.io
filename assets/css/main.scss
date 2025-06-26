@@ -23,3 +23,10 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+.pub-button {
+  padding: 4px 6px !important;           // 稍微压缩但不至于太挤
+  font-size: 0.67rem !important;         // 保持较小但可读的字号
+  border-radius: 4px !important;         // 保留圆角风格
+  line-height: 1.2 !important;           // 避免行高太高导致上下留白过大
+}

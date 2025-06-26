@@ -1,34 +1,57 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle:  >
+  <strong>Ph.D.</strong> in Computer Science · Formal Methods<br>
+  Institute of Software, Chinese Academy of Sciences
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+profile: false
+  # align: right
+  # image: prof_pic.jpg
+  # image_circular: false # crops the image to make it circular
+  # more_info: >
+    # <p>555 your office number</p>
+    # <p>123 your address street</p>
+    # <p>Your City, State 12345</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: 
+  enable: true # includes a list of papers marked as "selected={true}"
+  scrollabel: true
+  limit: 3
 
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<!-- 第一行：个人简介 + 联系方式（左） + 头像（右） -->
+<div style="display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2rem;">
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+  <!-- 左侧：简介 + 联系方式 -->
+  <div style="flex: 3;">
+    <p>
+      I am Han SU, a Ph.D. graduate from the Institute of Software, Chinese Academy of Sciences (ISCAS), where I was supervised by <a href="https://lcs.ios.ac.cn/~znj/">Prof. Naijun Zhan</a>.
+      I will join the National Institute of Informatics (NII) in Tokyo as a postdoctoral researcher in August 2025.
+    </p>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+    <p>
+      My research primarily focuses on the formal design and analysis of Cyber-Physical Systems (CPS), especially when these systems interact with complex environments involving delays, stochasticity, or intricate control objectives expressed in logics such as Signal Temporal Logic (STL).
+    </p>
+
+    <div style="text-align: center; font-size: 0.8rem; margin-top: 0.3rem; font-weight: 600;">
+      <a href="mailto:suhan@ios.ac.cn" style="margin: 0 8px;">Email</a> ·
+      <a href="https://scholar.google.com/citations?user=7mBkXNMAAAAJ" target="_blank" style="margin: 0 8px;">Google Scholar</a> ·
+      <a href="https://orcid.org/0000-0003-4260-8340" target="_blank" style="margin: 0 8px;">ORCID</a> ·
+      <a href="https://dblp.org/pid/XX/XXXX.html" target="_blank" style="margin: 0 8px;">dblp</a> ·
+      <a href="{{ site.baseurl }}/assets/cv/main.pdf" target="_blank" style="margin: 0 8px;">CV</a>
+    </div>
+  </div>
+
+  <!-- 右侧：照片 -->
+  <div style="flex: 1;">
+    <img src="{{ site.baseurl }}/assets/img/prof_pic.jpg" alt="Han SU" style="width: 160px; border-radius: 8px;" />
+  </div>
+</div>

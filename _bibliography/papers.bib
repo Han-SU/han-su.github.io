@@ -1,115 +1,82 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{10.1145/3716863.3718052,
+author = {Su, Han and Shankar, Saumya and Pinisetty, Srinivas and Roop, Partha S. and Zhan, Naijun},
+title = {Runtime Enforcement of CPS against Signal Temporal Logic},
+year = {2025},
+isbn = {9798400715044},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3716863.3718052},
+abstract = {Cyber-Physical Systems (CPSs), especially those involving autonomy, need guarantees of their safety. Runtime Enforcement (RE) is a lightweight method to formally ensure that some specified properties are satisfied over the executions of the system. Hence, there is recent interest in the RE of CPS. However, existing methods are not designed to tackle specifications suitable for the hybrid dynamics of CPS. With this in mind, we develop runtime enforcement of CPS using properties defined in Signal Temporal Logic (STL).In this work, we aim to construct a runtime enforcer for a given STL formula to minimally modify a signal to satisfy the formula. To achieve this, the STL formula to be enforced is first translated into a timed transducer, while the signal to be corrected is encoded as timed words. We provide timed transducers for the temporal operators until and release noting that other temporal operators can be expressed using these two. Our approach enables effective enforcement of STL properties for CPS. A case study is provided to illustrate the approach and generate empirical evidence of its suitability for CPS.},
+booktitle = {Proceedings of the 28th ACM International Conference on Hybrid Systems: Computation and Control},
+articleno = {18},
+numpages = {11},
+keywords = {Reactive System, Runtime Enforcement, Signal Temporal Logic, Timed Automata, Timed Transducer},
+location = {Irvine, CA, USA},
+series = {HSCC '25},
+selected = {true},
+abbr = {HSCC 2025},
+preview = {hscc2025.jpg},
+award = {https://hscc.acm.org/2025/hscc-best-paper-award/},
+award_name = {Best Paper Finalist},
+pdf = {RuntimeEnforce/paper.pdf},
+slides = {RuntimeEnforce/talk.pdf},
+bibtex_show = {true},
+doi = {10.1145/3716863.3718052},
+artifact = {https://github.com/Han-SU/stl-enforcement-experiments}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@InProceedings{10.1007/978-3-031-71177-0_15,
+author="Su, Han
+and Feng, Shenghua
+and Zhan, Sinong
+and Zhan, Naijun",
+editor="Platzer, Andre
+and Rozier, Kristin Yvonne
+and Pradella, Matteo
+and Rossi, Matteo",
+title="Switching Controller Synthesis for Hybrid Systems Against STL Formulas",
+booktitle="International Symposium on Formal Methods",
+year="2024",
+location = {Milan, Italy},
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="229--247",
+abstract="Switching controllers play a pivotal role in directing hybrid systems (HSs) towards the desired objective, embodying a ``correct-by-construction'' approach to HS design. Identifying these objectives is thus crucial for the synthesis of effective switching controllers. While most of existing works focus on safety and liveness, few of them consider timing constraints. In this paper, we delves into the synthesis of switching controllers for HSs that meet system objectives given by a fragment of STL, which essentially corresponds to a reach-avoid problem with timing constraints. Our approach involves iteratively computing the state sets that can be driven to satisfy the reach-avoid specification with timing constraints. This technique supports to create switching controllers for both constant and non-constant HSs. We validate our method's soundness, and confirm its relative completeness for a certain subclass of HSs. Experiment results affirms the efficacy of our approach.",
+isbn="978-3-031-71177-0",
+selected = {true},
+abbr = {FM 2024},
+preview = {fm2024.jpg},
+doi = {10.1007/978-3-031-71177-0_15},
+pdf = {SwitchControl/paper.pdf},
+slides = {SwitchControl/talk.pdf},
+bibtex_show = {true}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{Zhan_Su_Yang_Gu_2024, title={Reset controller synthesis: a correct-by-construction way to the design of CPS}, volume={2}, DOI={10.1017/cbp.2024.5}, journal={Research Directions: Cyber-Physical Systems}, author={Zhan, Naijun and Su, Han and Yang, Mengfei and Gu, Bin}, year={2024}, pages={e7}} <div></div>
+
+@article{10.1145/3586051,
+author = {Feng, Shenghua and Chen, Mingshuai and Su, Han and Kaminski, Benjamin Lucien and Katoen, Joost-Pieter and Zhan, Naijun},
+title = {Lower Bounds for Possibly Divergent Probabilistic Programs},
+year = {2023},
+issue_date = {April 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {7},
+number = {OOPSLA1},
+url = {https://doi.org/10.1145/3586051},
+doi = {10.1145/3586051},
+abstract = {We present a new proof rule for verifying lower bounds on quantities of probabilistic programs. Our proof rule is not confined to almost-surely terminating programs -- as is the case for existing rules -- and can be used to establish non-trivial lower bounds on, e.g., termination probabilities and expected values, for possibly divergent probabilistic loops, e.g., the well-known three-dimensional random walk on a lattice.},
+journal = {Proc. ACM Program. Lang.},
+month = apr,
+articleno = {99},
+numpages = {31},
+keywords = {almost-sure termination, lower bounds, probabilistic programs, quantitative verification, uniform integrability, weakest preexpectations},
+selected = {true},
+abbr = {OOPSLA 2023},
+pdf = {LowerBound/paper.pdf},
+slides = {LowerBound/slide.pdf}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
-}
