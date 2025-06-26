@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	10pt, % Default font size, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
+
+\usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\definecolor{myblue}{HTML}{377eb8}
+\newcommand{\fileicon}{\scriptsize{\textcolor{myblue}{\faFile}}}
+%------------------------------------------------
+
+
+
+\name{HAN SU \href{https://scholar.google.com/citations?user=7mBkXNMAAAAJ&hl=en}{\includegraphics[height=.4\baselineskip]{scholar}}} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{(+86) 19801173297 \\ \href{mailto:suhan@ios.ac.cn}{suhan@ios.ac.cn}} % Contact information
+
+\address{Institute of Software, Chinese Academy Sciences} % Main address
+
+\address{No.~4 South Fourth Street, Zhong Guan Cun, Beijing, P.R.China \\ 100190} % A secondary address (optional)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+    \textbf{Ph.D in Computer Software and Theory} \hfill \textit{Sep.2019 ~ - ~ present}\\
+    State Key Laboratory of Computer Science, Institute of Software, CAS \smallskip \\ 
+	Advisor: Prof. Naijun Zhan ~~~ HomePage: \href{https://lcs.ios.ac.cn/~znj/}{\textcolor{myblue}{https://lcs.ios.ac.cn/~znj/}}
+	\medskip\\
+	\textbf{Visiting Scholar} \hfill \textit{Mar. 2024 ~ - ~ Jun. 2024}\\
+	Precision Timed Research Group, The University of Auckland, \\
+	Advisor: Prof. Partha Roop
+	\medskip\\
+	\textbf{B.S. in Control Science and Engineering} \hfill \textit{Sep. 2015 ~ - ~ Jun. 2019} \\ 
+	College of Control Science and Engineering, Shandong University \smallskip\\
+	Overall GPA: $4.37/5$ \quad Rank: $1/20$
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Interests}
+	My primary research focus is on the \textbf{formal design of Cyber-Physical Systems}, particularly when these systems interact with complex environments, such as those characterized by \textbf{delays} and \textbf{stochastic}, or when the control objectives are intricately defined, such as those specified using \textbf{Signal Temporal Logic}.
+	I also have a keen interest in \textbf{lightweight formal methods (runtime monitoring/enforcement)} and \textbf{verification of probabilistic programs}.
+	Currently, I am actively engaged in research dedicated to synthesizing enforcers for reactive systems against Signal Temporal Logic.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Publications}
+    \begin{rSubsection}{Published Articles}{}{}{}
+		\item \textbf{Han Su}, Shenghua Feng, Naijun Zhan and Simon Sinong Zhan ``Switching Controller Synthesis for Hybrid Systems Against STL Formulas.'' In International Symposium on Formal Methods, pp. 229-247. Cham: Springer Nature Switzerland, 2024. \hfill \href{https://link.springer.com/content/pdf/10.1007/978-3-031-71177-0_15.pdf?pdf=inline%20link}{\fileicon}
+		\item \textbf{Han Su}, Saumya Shankar, Srinivas Pinisetty, Partha S. Roop, Naijun Zhan. ``Runtime Enforcement of CPS against Signal Temporal Logic.'' Proceedings of the 28th ACM International Conference on Hybrid Systems: Computation and Control (2025)\hfill\href{https://arxiv.org/pdf/2502.11584}{\fileicon}
+		\item Shenghua Feng, Mingshuai Chen, \textbf{Han Su}, Benjamin Lucien Kaminski, Joost-Pieter Katoen, and Naijun Zhan. ``Lower Bounds for Possibly Divergent Probabilistic Programs.'' Proceedings of the ACM on Programming Languages 7, no. OOPSLA1 (2023): 696-726.\hfill \href{https://dl.acm.org/doi/pdf/10.1145/3586051}{\fileicon}
+		\item Naijun Zhan, \textbf{Han Su}, Mengfei Yang, Bin Gu. ``Reset Controller Synthesis: A Correct-by-Construction Way to the Design of CPS.'' Research Directions: Cyber-Physical-Systems 
+	\end{rSubsection}
+    \begin{rSubsection}{Under Review Articles}{}{}{}
+		\item \textbf{Han Su}, Jiyu Zhu, Shenghua Feng, Yunjun Bai, Bin Gu, Jiang Liu, Mengfei Yang, and Naijun Zhan. ``Reset Controller Synthesis by Reach-avoid Analysis for Delay Hybrid Systems"
+		\qquad \hfill \href{https://arxiv.org/pdf/2309.05908}{\fileicon}
+        \item Liu Jiang, \textbf{Han Su}, Yunjun Bai, Bin Gu, Bai Xue, Mengfei Yang, and Naijun Zhan. ``Correct-by-Construction for Hybrid Systems by Synthesizing Reset Controller" arXiv preprint arXiv:2309.05906 (2023).\hfill \href{https://arxiv.org/pdf/2309.05906}{\fileicon}
+	\end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	HONORS AND ACCOLADES
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Selected Honors}
+%     Merit students of the University of Chinese Academy of Sciences \hfill \textit{2022-2023}\\
+%     First prize of China Undergraduate Mathematical Contest in Modeling\hfill \textit{Nov. 2017}\\
+%     Meritorious Winner of The Mathematical Contest in Modeling\hfill \textit{Jun. 2018}\\
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Technical Strengths}
+
+% 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+% 		Programming Languages & C/C++, Python, Julia, MATLAB, Mathematica\\
+% 		Formal Verification Tools & PRISM, Z$3$, UPPAAL, Isabelle\\
+%         Optimization Tools & MOSEK, YALMIP
+% 	\end{tabular}
+
+% \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{References}
+	% 推荐人信息项
+	\item \textbf{Naijun Zhan}, Professor \hfill \href{mailto:znj@ios.ac.cn}{znj@ios.ac.cn} \\
+	School of Computer Science, Peking University
+	
+	\item \textbf{Zhenjiang Hu}, Professor and Dean \hfill \href{mailto:huzj@pku.edu.cn}{huzj@pku.edu.cn} \\
+	School of Computer Science, Peking University
+	
+	\item \textbf{Partha Roop}, Professor and Associate Dean \hfill \href{mailto:p.roop@auckland.ac.nz}{p.roop@auckland.ac.nz} \\
+	Department of Electrical, Computer and Software Engineering, The University of Auckland
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
