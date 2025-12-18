@@ -44,8 +44,8 @@ ninja.data = [{
           section: "News",},{id: "news-i-have-successfully-defended-my-doctoral-dissertation-and-been-awarded-the-ph-d-degree",
           title: '🎓 I have successfully defended my doctoral dissertation and been awarded the Ph.D....',
           description: "",
-          section: "News",},{id: "service-program-committee",
-          title: 'Program Committee',
+          section: "News",},{id: "service-program-artifact-committees",
+          title: 'Program / Artifact Committees',
           description: "",
           section: "Service",handler: () => {
               window.location.href = "/service/review_ae/";
