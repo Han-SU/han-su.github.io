@@ -3,8 +3,11 @@
     <ul style="list-style-type: none; padding-left: 0;">
       {% assign items = site.service | sort: 'order' %}
       {% for item in items %}
-        <li>
-          <strong>{{ item.title }}:</strong> {{ item.content | markdownify | strip_html | strip_newlines }}
+        <li style="margin-bottom: 0.6rem;">
+          <strong>{{ item.title }}</strong>
+          <div style="margin-top: 0.25rem;">
+            {{ item.content | markdownify }}
+          </div>
         </li>
       {% endfor %}
     </ul>
